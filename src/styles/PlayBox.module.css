@@ -1,0 +1,23 @@
+.playBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 20%;
+    margin-top: 15px;
+}
+
+.playBoxContent{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+}
+
+.playBoxContent > a{
+    text-align: center;
+    font-size: 2rem;
+    color: #000;
+}
+
+.playBoxContent > a > img{
+    width: 100%;
+}

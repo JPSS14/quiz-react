@@ -1,0 +1,25 @@
+.mainSection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-basis: 100%;
+    height: 400px;
+    overflow: scroll;
+}
+
+.heroe{
+    max-width: 200px;
+    flex-basis: 45%;
+}
+
+.heroe > a{
+    color: #000;
+}
+
+.heroe > a > img{
+    width: 100%;
+}
+
+.heroe > a > h2{
+    text-align: center;
+}

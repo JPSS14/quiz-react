@@ -1,0 +1,23 @@
+.trainingBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 20%;
+    margin-top: 15px;
+}
+
+.trainingBoxContent{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+}
+
+.trainingBoxContent > a{
+    text-align: center;
+    font-size: 2rem;
+    color: #000;
+}
+
+.trainingBoxContent > a > img{
+    width: 100%;
+}
