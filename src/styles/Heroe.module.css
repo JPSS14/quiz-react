@@ -1,0 +1,13 @@
+.mainContainer{
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+}
+
+.background{
+    flex-basis: 45%;
+}
+
+.background > img{
+    width: 100%;
+}

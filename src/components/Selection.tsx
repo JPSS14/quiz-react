@@ -4,7 +4,7 @@ import styles from '../styles/TrainingHeroes.module.css';
 export default function Selection({imgSelect, route, heroe}) {
     return(
     <div className={styles.heroe}>
-        <Link href={`/${route}`}>
+        <Link href={`/training/${route}`}>
             <a>
                 <img src={imgSelect} />
                 <h2>{heroe}</h2>

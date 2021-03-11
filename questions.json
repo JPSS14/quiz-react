@@ -1,0 +1,23 @@
+[
+    {
+        "heroe": "Homem de ferro",
+        "idQuestion": 1,
+        "question": "Qual o nome da primeira armadura do Homem de Ferro?",
+        "amount": 10,
+        "answer": "Mark-1",
+        "alternative1": "Marq-1",
+        "alternative2": "Machine-1",
+        "alternative3": "Armor-1"
+    },
+
+    {
+        "heroe": "Homem de ferro",
+        "idQuestion": 2,
+        "question": "Qual o nome da armadura que o Homem de Ferro usuou no filme Vingadores: Ultimato?",
+        "amount": 20,
+        "answer": "Mark-85",
+        "alternative1": "Marq-7",
+        "alternative2": "Machine-89",
+        "alternative3": "Armor-100"
+    }
+]

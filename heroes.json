@@ -1,0 +1,42 @@
+[
+    {
+        "heroe": "Homem de ferro",
+        "imgSelect": "c-homem-de-ferro-dif.png",
+        "route": "homem-de-ferro"
+    },
+    {
+        "heroe": "Capitão América",
+        "imgSelect": "c-capitao-america-dif.png",
+        "route": "capitao-america"
+    },
+    {
+        "heroe": "Viuva Negra",
+        "imgSelect": "c-viuva-negra-dif.png",
+        "route": "viuva-negra"
+    },
+    {
+        "heroe": "Thor",
+        "imgSelect": "c-thor-dif.png",
+        "route": "thor"
+    },
+    {
+        "heroe": "Hulk",
+        "imgSelect": "c-hulk-dif.png",
+        "route": "hulk"
+    },
+    {
+        "heroe": "Gavião Arqueiro",
+        "imgSelect": "c-gaviao-arqueiro-dif.png",
+        "route": "gaviao-arqueiro"
+    },
+    {
+        "heroe": "Nick Fury",
+        "imgSelect": "c-nick-fury-dif.png",
+        "route": "nick-fury"
+    },
+    {
+        "heroe": "Loki",
+        "imgSelect": "c-loki-dif.png",
+        "route": "loki"
+    }
+]
