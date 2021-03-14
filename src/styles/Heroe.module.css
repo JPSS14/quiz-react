@@ -11,6 +11,8 @@
 
 .mainQuestion{
     flex-basis: 45%;
+    margin-left: 10px;
+    margin-top: 5px;
 }
 .background{
     flex-basis: 45%;
@@ -19,4 +21,21 @@
 .background > img{
     width: 100%;
     border-radius: 0px 5px 5px 0px;
+}
+
+.mainQuestion > p{
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.mainQuestion > div{
+    font-size: 1.2em;
+}
+
+.mainQuestion > div > input{
+    margin-top: 7px;
+}
+
+.mainQuestion > div > label{
+    margin-left: 5px;
 }
