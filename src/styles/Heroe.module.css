@@ -16,6 +16,7 @@
 }
 .background{
     flex-basis: 45%;
+    flex: 1;
 }
 
 .background > img{

@@ -2,21 +2,19 @@ import { useRouter } from 'next/router';
 import styles from '../../styles/main.module.css';
 import heroeStyle from '../../styles/Heroe.module.css';
 import questions from '../../../questions.json';
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
+import {QuestionsContext} from '../../contexts/QuestionContext';
 
 export default function Heroe() {
     const router = useRouter();
-
+    const {activeQuestion, startNewQuestion} = useContext(QuestionsContext);
     const [heroeList, setHeroeList] = useState([]);
 
-    useEffect(() => {
-        const loadAll = async () => {
-            let list = questions;
-            setHeroeList(list);
-        }
+    startNewQuestion();
 
-        loadAll();
-    }, []);
+    // useEffect(() => {
+    //     startNewQuestion();
+    // }, []);
 
     const lis = questions;
 
@@ -27,7 +25,7 @@ export default function Heroe() {
             </div>
             <div className={heroeStyle.mainContainer}>
                 <div className={heroeStyle.mainQuestion}>
-                    <p>Qual o nome da primeira armadura do Homem de Ferro?</p>
+                    <p>{activeQuestion.question}</p>
                     <div>
                         <input type="radio" name="alternativa" id="a1" value="Marq-1"></input>
                         <label htmlFor="a1">Marq-1</label>
