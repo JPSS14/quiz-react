@@ -16,7 +16,10 @@ interface QuestionsContextData {
     level: number;
     levelUp: () => void;
     activeQuestion: Questions;
-    startNewQuestion: () => void;
+    startNewQuestion: (heroe:any) => void;
+    resetQuestion: () => void;
+    isActive: boolean;
+    start: () => void;
 }
 
 export const QuestionsContext = createContext({} as QuestionsContextData);
@@ -26,18 +29,31 @@ interface QuestionsProviderProps {
 }
 
 export function QuestionsProvider({ children }: QuestionsProviderProps) {
-    const [level, setLevel] = useState(3);
+    const [level, setLevel] = useState(37);
     const [activeQuestion, setActiveQuestion] = useState(null);
+    const [isActive, setIsActive] = useState(false);
+
+    function start(){
+        if(isActive === true){
+            setIsActive(false);
+        }else{
+            setIsActive(true);
+        }
+    }
 
     function levelUp() {
         setLevel(level + 1);
     }
 
-    function startNewQuestion(){
+    function startNewQuestion(heroe){
         const randomQuestionIndex = Math.floor(Math.random() * questions.length);
         const question = questions[randomQuestionIndex];
-
+        console.log("startNewQuestion = ",heroe);
         setActiveQuestion(question);
+    }
+
+    function resetQuestion(){
+        setActiveQuestion(null);
     }
 
     return (
@@ -46,7 +62,10 @@ export function QuestionsProvider({ children }: QuestionsProviderProps) {
                 level,
                 levelUp,
                 activeQuestion,
-                startNewQuestion
+                startNewQuestion,
+                resetQuestion,
+                isActive,
+                start
             }}
         >
             {children}

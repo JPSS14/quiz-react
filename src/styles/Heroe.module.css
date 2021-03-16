@@ -70,3 +70,16 @@
     cursor: pointer;
     flex-basis: 45%;
 }
+
+.buttonStart{
+    background: rgb(3, 158, 230);
+    padding: 10px 15px;
+    font-size: 1.5em;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    flex-basis: 100%;
+    align-items: center;
+}
