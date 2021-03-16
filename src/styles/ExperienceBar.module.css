@@ -3,6 +3,7 @@
     align-items: center;
     max-width: 70%;
     margin: 10px auto;
+    flex-wrap: wrap;
 }
 
 .experienceBar span{
@@ -28,4 +29,9 @@ span.currentExperience{
     position: absolute;
     top: 8px;
     transform: translateX(-50%);
+}
+
+.levelBar{
+    flex-basis: 100%;
+    margin-top: 15px;
 }

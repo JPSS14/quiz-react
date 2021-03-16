@@ -49,6 +49,10 @@ export default function Heroe() {
                     <img src={`/${router.query.heroe}-back-3.jpg`} alt={`${router.query.heroe}`} />
                 </div>
             </div>
+            <div className={heroeStyle.option}>
+                <button className={heroeStyle.buttonCorrection}>Corrigir</button>
+                <button className={heroeStyle.buttonCancel}>Desistir</button>
+            </div>
         </main>
     );
 }

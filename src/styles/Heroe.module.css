@@ -39,3 +39,33 @@
 .mainQuestion > div > label{
     margin-left: 5px;
 }
+
+.option{
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-around;
+}
+
+.buttonCorrection{
+    background: greenyellow;
+    padding: 10px 15px;
+    font-size: 1.5em;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    flex-basis: 45%;
+}
+
+.buttonCancel{
+    background: red;
+    padding: 10px 15px;
+    font-size: 1.5em;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    flex-basis: 45%;
+}
