@@ -16,7 +16,7 @@ interface QuestionsContextData {
     level: number;
     levelUp: () => void;
     activeQuestion: Questions;
-    startNewQuestion: (heroe:any) => void;
+    startNewQuestion: (heroe: any) => void;
     resetQuestion: () => void;
     isActive: boolean;
     start: () => void;
@@ -29,7 +29,7 @@ interface QuestionsProviderProps {
 }
 
 export function QuestionsProvider({ children }: QuestionsProviderProps) {
-    const [level, setLevel] = useState(37);
+    const [level, setLevel] = useState(3);
     const [activeQuestion, setActiveQuestion] = useState(null);
     const [isActive, setIsActive] = useState(false);
 
@@ -45,11 +45,30 @@ export function QuestionsProvider({ children }: QuestionsProviderProps) {
         setLevel(level + 1);
     }
 
+    function mixerQuestions(array:any) {
+        var actualIndex = array.length, tempValue:any, randomIndex:any;
+     
+        while (0 !== actualIndex) {
+     
+            randomIndex = Math.floor(Math.random() * actualIndex);
+            actualIndex -= 1;
+     
+            tempValue = array[actualIndex];
+            array[actualIndex] = array[randomIndex];
+            array[randomIndex] = tempValue;
+        }
+     
+        return array;
+    }
+
     function startNewQuestion(heroe){
         const randomQuestionIndex = Math.floor(Math.random() * questions.length);
+        const teste = questions.filter(heroes => heroes.heroe === heroe);
+        mixerQuestions(teste);
+        console.log(teste);
         const question = questions[randomQuestionIndex];
-        console.log("startNewQuestion = ",heroe);
         setActiveQuestion(question);
+        console.log(question);
     }
 
     function resetQuestion(){

@@ -18,6 +18,11 @@ export default function Heroe() {
         }
     }, []);
 
+    function active(){
+        start();
+        startNewQuestion(router.query.heroe);
+    }
+
     // console.log(activeQuestion.question);
 
     const lis = questions;
@@ -33,22 +38,22 @@ export default function Heroe() {
 
                 {isActive ? (
                     <div className={heroeStyle.mainQuestion}>
-                        <p>Questão?</p>
+                        <p>{activeQuestion.question}</p>
                         <div>
                             <input type="radio" name="alternativa" id="a1" value="Marq-1"></input>
-                            <label htmlFor="a1">Marq-1</label>
+                            <label htmlFor="a1">{activeQuestion.alternative1}</label>
                         </div>
                         <div>
                             <input type="radio" name="alternativa" id="a2" value="Machine-1"></input>
-                            <label htmlFor="a2">Machine-1</label>
+                            <label htmlFor="a2">{activeQuestion.alternative2}</label>
                         </div>
                         <div>
                             <input type="radio" name="alternativa" id="a3" value="Mark-1"></input>
-                            <label htmlFor="a3">Mark-1</label>
+                            <label htmlFor="a3">{activeQuestion.alternative3}</label>
                         </div>
                         <div>
                             <input type="radio" name="alternativa" id="a4" value="Armor-1"></input>
-                            <label htmlFor="a4">Armor-1</label>
+                            <label htmlFor="a4">{activeQuestion.answer}</label>
                         </div>
                     </div>
                 ) : (
@@ -68,7 +73,7 @@ export default function Heroe() {
                     <button className={heroeStyle.buttonCancel} onClick={start}>Desistir</button>
                 </div>
             ) : (
-                <button id="startButton" className={heroeStyle.buttonStart} onClick={start}>Iniciar Quiz!</button>
+                <button id="startButton" className={heroeStyle.buttonStart} onClick={active}>Iniciar Quiz!</button>
             )}
             
 
