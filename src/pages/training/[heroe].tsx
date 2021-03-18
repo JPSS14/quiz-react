@@ -7,31 +7,28 @@ import { QuestionsContext } from '../../contexts/QuestionContext';
 
 export default function Heroe() {
     const router = useRouter();
-    const { activeQuestion, startNewQuestion, isActive, start, corrigir, desistir } = useContext(QuestionsContext);
+    const { activeQuestion, startNewQuestion, isActive, start, corrigir, activeCorrection } = useContext(QuestionsContext);
 
     const [alternative, setAlternative] = useState("");
 
     // startNewQuestion(router.query.heroe);
 
     useEffect(() => {
-        if(isActive === true){
+        if (isActive === true) {
             start();
         }
     }, []);
 
 
-    function active(){
+    function active() {
         start();
         // buildAllQuestions(router.query.heroe);
         startNewQuestion(router.query.heroe);
     }
 
-    function correction(){
+    function correction() {
         corrigir(alternative);
     }
-
-
-    const lis = questions;
 
     console.log(isActive);
 
@@ -47,19 +44,19 @@ export default function Heroe() {
                         <p>{activeQuestion.question}</p>
                         <p>terte: {alternative}</p>
                         <div>
-                            <input type="radio" id="a1" checked={alternative === activeQuestion.alternative1} value={activeQuestion.alternative1} onChange={(e) => {setAlternative(e.target.value)}}></input>
+                            <input type="radio" id="a1" checked={alternative === activeQuestion.alternative1} value={activeQuestion.alternative1} onChange={(e) => { setAlternative(e.target.value) }}></input>
                             <label htmlFor="a1">{activeQuestion.alternative1}</label>
                         </div>
                         <div>
-                            <input type="radio" id="a2" checked={alternative === activeQuestion.alternative2} value={activeQuestion.alternative2} onChange={(e) => {setAlternative(e.target.value)}}></input>
+                            <input type="radio" id="a2" checked={alternative === activeQuestion.alternative2} value={activeQuestion.alternative2} onChange={(e) => { setAlternative(e.target.value) }}></input>
                             <label htmlFor="a2">{activeQuestion.alternative2}</label>
                         </div>
                         <div>
-                            <input type="radio" id="a3" checked={alternative === activeQuestion.alternative3} value={activeQuestion.alternative3} onChange={(e) => {setAlternative(e.target.value)}}></input>
+                            <input type="radio" id="a3" checked={alternative === activeQuestion.alternative3} value={activeQuestion.alternative3} onChange={(e) => { setAlternative(e.target.value) }}></input>
                             <label htmlFor="a3">{activeQuestion.alternative3}</label>
                         </div>
                         <div>
-                            <input type="radio" id="a4" checked={alternative === activeQuestion.answer} value={activeQuestion.answer} onChange={(e) => {setAlternative(e.target.value)}}></input>
+                            <input type="radio" id="a4" checked={alternative === activeQuestion.answer} value={activeQuestion.answer} onChange={(e) => { setAlternative(e.target.value) }}></input>
                             <label htmlFor="a4">{activeQuestion.answer}</label>
                         </div>
                     </div>
@@ -82,7 +79,20 @@ export default function Heroe() {
             ) : (
                 <button id="startButton" className={heroeStyle.buttonStart} onClick={active}>Iniciar Quiz!</button>
             )}
-            
+
+            {activeCorrection === "Certo" ? (
+                <div>
+                    Correto
+                </div>
+            ) : activeCorrection === "Errado" ? (
+                <div>
+                    Errado
+                </div>
+            ) : (
+                <>
+                </>
+            )}
+
 
         </main>
     );

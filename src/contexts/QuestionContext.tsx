@@ -24,10 +24,10 @@ interface QuestionsContextData {
     corrigir: (alternative: any) => void;
     next: number;
     // buildAllQuestions: (heroe: any) => void;
-    desistir: () => void;
     setAlternative: any;
     experienceToNextLevel: number;
     currentExperience: number;
+    activeCorrection: string;
 }
 
 export const QuestionsContext = createContext({} as QuestionsContextData);
@@ -43,16 +43,19 @@ export function QuestionsProvider({ children }: QuestionsProviderProps) {
     const [next, setNext] = useState(0);
     const [alternative, setAlternative] = useState("");
     const [currentExperience, setExperience] = useState(0);
+    const [activeCorrection, setActiveCorrection] = useState("Inicial");
 
     const experienceToNextLevel = Math.pow((level + 1) * 4,2);
 
-    let allQuestion = [];
+    // let allQuestion = [];
 
     function start() {
         if (isActive === true) {
             setIsActive(false);
+            setActiveCorrection("Inicial");
         } else {
             setIsActive(true);
+            setActiveCorrection("Inicial");
         }
     }
 
@@ -114,13 +117,12 @@ export function QuestionsProvider({ children }: QuestionsProviderProps) {
                 finalExperience = finalExperience - experienceToNextLevel;
                 levelUp();
             }
+            setActiveCorrection("Certo");
+        }else{
+            setActiveCorrection("Errado");
         }
 
         setExperience(finalExperience);
-    }
-
-    function desistir() {
-        setNext(0);
     }
 
     return (
@@ -137,10 +139,10 @@ export function QuestionsProvider({ children }: QuestionsProviderProps) {
                 corrigir,
                 next,
                 // buildAllQuestions,
-                desistir,
                 setAlternative,
                 experienceToNextLevel,
-                currentExperience
+                currentExperience,
+                activeCorrection
             }}
         >
             {children}
