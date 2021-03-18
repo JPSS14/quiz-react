@@ -62,7 +62,7 @@ export default function Heroe() {
                 )}
 
                 <div className={heroeStyle.background}>
-                    <img src={`/${router.query.heroe}-back-3.jpg`} alt={`${router.query.heroe}`} />
+                    <img src={`/${router.query.heroe}-back.jpg`} alt={`${router.query.heroe}`} />
                 </div>
             </div>
 
