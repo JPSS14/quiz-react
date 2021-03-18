@@ -20,6 +20,11 @@ interface QuestionsContextData {
     resetQuestion: () => void;
     isActive: boolean;
     start: () => void;
+    // allQuestions: any;
+    corrigir: any;
+    next: number;
+    // buildAllQuestions: (heroe: any) => void;
+    desistir: () => void;
 }
 
 export const QuestionsContext = createContext({} as QuestionsContextData);
@@ -32,11 +37,15 @@ export function QuestionsProvider({ children }: QuestionsProviderProps) {
     const [level, setLevel] = useState(3);
     const [activeQuestion, setActiveQuestion] = useState(null);
     const [isActive, setIsActive] = useState(false);
+    const [next, setNext] = useState(0);
 
-    function start(){
-        if(isActive === true){
+
+    let allQuestion = [];
+
+    function start() {
+        if (isActive === true) {
             setIsActive(false);
-        }else{
+        } else {
             setIsActive(true);
         }
     }
@@ -45,34 +54,54 @@ export function QuestionsProvider({ children }: QuestionsProviderProps) {
         setLevel(level + 1);
     }
 
-    function mixerQuestions(array:any) {
-        var actualIndex = array.length, tempValue:any, randomIndex:any;
-     
+    function mixerQuestions(array: any) {
+        var actualIndex = array.length, tempValue: any, randomIndex: any;
+
         while (0 !== actualIndex) {
-     
+
             randomIndex = Math.floor(Math.random() * actualIndex);
             actualIndex -= 1;
-     
+
             tempValue = array[actualIndex];
             array[actualIndex] = array[randomIndex];
             array[randomIndex] = tempValue;
         }
-     
+
         return array;
     }
 
-    function startNewQuestion(heroe){
-        const randomQuestionIndex = Math.floor(Math.random() * questions.length);
-        const teste = questions.filter(heroes => heroes.heroe === heroe);
-        mixerQuestions(teste);
-        console.log(teste);
-        const question = questions[randomQuestionIndex];
-        setActiveQuestion(question);
-        console.log(question);
+    // function buildAllQuestions(heroe) {
+    //     const randomQuestionIndex = Math.floor(Math.random() * questions.length);
+    //     setAllQuestions(mixerQuestions(questions.filter(heroes => heroes.heroe === heroe)).slice(0, 2));
+    //     allQuestion = mixerQuestions(questions.filter(heroes => heroes.heroe === heroe)).slice(0, 2);
+    //     // mixerQuestions(allQuestions);
+    //     console.log("build this -> ", allQuestion);
+    //     setActiveHeroe(heroe);
+    //     // setActiveQuestion(allQuestion[next]);
+
+    //     const question = questions[randomQuestionIndex];
+    //     setActiveQuestion(question);
+
+       
+
+    //     startNewQuestion();
+    // }
+
+    function startNewQuestion(heroe) {
+        setActiveQuestion(mixerQuestions(questions.filter(heroes => heroes.heroe === heroe))[0]);
+ 
     }
 
-    function resetQuestion(){
+    function resetQuestion() {
         setActiveQuestion(null);
+    }
+
+    function corrigir() {
+        setNext(next + 1);
+    }
+
+    function desistir() {
+        setNext(0);
     }
 
     return (
@@ -84,7 +113,12 @@ export function QuestionsProvider({ children }: QuestionsProviderProps) {
                 startNewQuestion,
                 resetQuestion,
                 isActive,
-                start
+                start,
+                // allQuestions,
+                corrigir,
+                next,
+                // buildAllQuestions,
+                desistir
             }}
         >
             {children}

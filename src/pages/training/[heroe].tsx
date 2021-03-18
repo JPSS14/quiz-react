@@ -7,8 +7,7 @@ import { QuestionsContext } from '../../contexts/QuestionContext';
 
 export default function Heroe() {
     const router = useRouter();
-    const { activeQuestion, startNewQuestion, isActive, start } = useContext(QuestionsContext);
-    const [heroeList, setHeroeList] = useState([]);
+    const { activeQuestion, startNewQuestion, isActive, start, corrigir, desistir } = useContext(QuestionsContext);
 
     // startNewQuestion(router.query.heroe);
 
@@ -20,10 +19,10 @@ export default function Heroe() {
 
     function active(){
         start();
+        // buildAllQuestions(router.query.heroe);
         startNewQuestion(router.query.heroe);
     }
 
-    // console.log(activeQuestion.question);
 
     const lis = questions;
 
@@ -69,7 +68,7 @@ export default function Heroe() {
 
             {isActive ? (
                 <div className={heroeStyle.option}>
-                    <button className={heroeStyle.buttonCorrection}>Corrigir</button>
+                    <button className={heroeStyle.buttonCorrection} onClick={corrigir}>Corrigir</button>
                     <button className={heroeStyle.buttonCancel} onClick={start}>Desistir</button>
                 </div>
             ) : (
