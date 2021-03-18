@@ -26,6 +26,10 @@ export default function Heroe() {
         startNewQuestion(router.query.heroe);
     }
 
+    function correction(){
+        corrigir(alternative);
+    }
+
 
     const lis = questions;
 
@@ -72,7 +76,7 @@ export default function Heroe() {
 
             {isActive ? (
                 <div className={heroeStyle.option}>
-                    <button className={heroeStyle.buttonCorrection} onClick={corrigir}>Corrigir</button>
+                    <button className={heroeStyle.buttonCorrection} onClick={correction}>Corrigir</button>
                     <button className={heroeStyle.buttonCancel} onClick={start}>Desistir</button>
                 </div>
             ) : (

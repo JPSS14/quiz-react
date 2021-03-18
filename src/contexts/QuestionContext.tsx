@@ -21,11 +21,13 @@ interface QuestionsContextData {
     isActive: boolean;
     start: () => void;
     // allQuestions: any;
-    corrigir: any;
+    corrigir: (alternative: any) => void;
     next: number;
     // buildAllQuestions: (heroe: any) => void;
     desistir: () => void;
     setAlternative: any;
+    experienceToNextLevel: number;
+    currentExperience: number;
 }
 
 export const QuestionsContext = createContext({} as QuestionsContextData);
@@ -35,12 +37,14 @@ interface QuestionsProviderProps {
 }
 
 export function QuestionsProvider({ children }: QuestionsProviderProps) {
-    const [level, setLevel] = useState(3);
+    const [level, setLevel] = useState(1);
     const [activeQuestion, setActiveQuestion] = useState(null);
     const [isActive, setIsActive] = useState(false);
     const [next, setNext] = useState(0);
     const [alternative, setAlternative] = useState("");
+    const [currentExperience, setExperience] = useState(0);
 
+    const experienceToNextLevel = Math.pow((level + 1) * 4,2);
 
     let allQuestion = [];
 
@@ -98,8 +102,21 @@ export function QuestionsProvider({ children }: QuestionsProviderProps) {
         setActiveQuestion(null);
     }
 
-    function corrigir() {
-        console.log(alternative);
+    function corrigir(alternative) {
+        let finalExperience = currentExperience;
+        if(alternative === activeQuestion.answer){
+            console.log(alternative);
+            const {amount} = activeQuestion;
+
+            finalExperience = currentExperience + amount;
+
+            if(finalExperience >= experienceToNextLevel){
+                finalExperience = finalExperience - experienceToNextLevel;
+                levelUp();
+            }
+        }
+
+        setExperience(finalExperience);
     }
 
     function desistir() {
@@ -121,7 +138,9 @@ export function QuestionsProvider({ children }: QuestionsProviderProps) {
                 next,
                 // buildAllQuestions,
                 desistir,
-                setAlternative
+                setAlternative,
+                experienceToNextLevel,
+                currentExperience
             }}
         >
             {children}
