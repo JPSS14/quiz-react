@@ -9,6 +9,8 @@ export default function Heroe() {
     const router = useRouter();
     const { activeQuestion, startNewQuestion, isActive, start, corrigir, desistir } = useContext(QuestionsContext);
 
+    const [alternative, setAlternative] = useState("");
+
     // startNewQuestion(router.query.heroe);
 
     useEffect(() => {
@@ -16,6 +18,7 @@ export default function Heroe() {
             start();
         }
     }, []);
+
 
     function active(){
         start();
@@ -38,20 +41,21 @@ export default function Heroe() {
                 {isActive ? (
                     <div className={heroeStyle.mainQuestion}>
                         <p>{activeQuestion.question}</p>
+                        <p>terte: {alternative}</p>
                         <div>
-                            <input type="radio" name="alternativa" id="a1" value="Marq-1"></input>
+                            <input type="radio" id="a1" checked={alternative === activeQuestion.alternative1} value={activeQuestion.alternative1} onChange={(e) => {setAlternative(e.target.value)}}></input>
                             <label htmlFor="a1">{activeQuestion.alternative1}</label>
                         </div>
                         <div>
-                            <input type="radio" name="alternativa" id="a2" value="Machine-1"></input>
+                            <input type="radio" id="a2" checked={alternative === activeQuestion.alternative2} value={activeQuestion.alternative2} onChange={(e) => {setAlternative(e.target.value)}}></input>
                             <label htmlFor="a2">{activeQuestion.alternative2}</label>
                         </div>
                         <div>
-                            <input type="radio" name="alternativa" id="a3" value="Mark-1"></input>
+                            <input type="radio" id="a3" checked={alternative === activeQuestion.alternative3} value={activeQuestion.alternative3} onChange={(e) => {setAlternative(e.target.value)}}></input>
                             <label htmlFor="a3">{activeQuestion.alternative3}</label>
                         </div>
                         <div>
-                            <input type="radio" name="alternativa" id="a4" value="Armor-1"></input>
+                            <input type="radio" id="a4" checked={alternative === activeQuestion.answer} value={activeQuestion.answer} onChange={(e) => {setAlternative(e.target.value)}}></input>
                             <label htmlFor="a4">{activeQuestion.answer}</label>
                         </div>
                     </div>

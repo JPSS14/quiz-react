@@ -25,6 +25,7 @@ interface QuestionsContextData {
     next: number;
     // buildAllQuestions: (heroe: any) => void;
     desistir: () => void;
+    setAlternative: any;
 }
 
 export const QuestionsContext = createContext({} as QuestionsContextData);
@@ -38,6 +39,7 @@ export function QuestionsProvider({ children }: QuestionsProviderProps) {
     const [activeQuestion, setActiveQuestion] = useState(null);
     const [isActive, setIsActive] = useState(false);
     const [next, setNext] = useState(0);
+    const [alternative, setAlternative] = useState("");
 
 
     let allQuestion = [];
@@ -82,14 +84,14 @@ export function QuestionsProvider({ children }: QuestionsProviderProps) {
     //     const question = questions[randomQuestionIndex];
     //     setActiveQuestion(question);
 
-       
+
 
     //     startNewQuestion();
     // }
 
     function startNewQuestion(heroe) {
         setActiveQuestion(mixerQuestions(questions.filter(heroes => heroes.heroe === heroe))[0]);
- 
+
     }
 
     function resetQuestion() {
@@ -97,7 +99,7 @@ export function QuestionsProvider({ children }: QuestionsProviderProps) {
     }
 
     function corrigir() {
-        setNext(next + 1);
+        console.log(alternative);
     }
 
     function desistir() {
@@ -118,7 +120,8 @@ export function QuestionsProvider({ children }: QuestionsProviderProps) {
                 corrigir,
                 next,
                 // buildAllQuestions,
-                desistir
+                desistir,
+                setAlternative
             }}
         >
             {children}

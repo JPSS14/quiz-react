@@ -1,6 +1,6 @@
 [
     {
-        "heroe": "Homem de ferro",
+        "heroe": "homem-de-ferro",
         "idQuestion": 1,
         "question": "Qual o nome da primeira armadura do Homem de Ferro?",
         "amount": 10,
@@ -11,7 +11,7 @@
     },
 
     {
-        "heroe": "Homem de ferro",
+        "heroe": "homem-de-ferro",
         "idQuestion": 2,
         "question": "Qual o nome da armadura que o Homem de Ferro usuou no filme Vingadores: Ultimato?",
         "amount": 20,
@@ -19,5 +19,27 @@
         "alternative1": "Marq-7",
         "alternative2": "Machine-89",
         "alternative3": "Armor-100"
+    },
+
+    {
+        "heroe": "homem-de-ferro",
+        "idQuestion": 3,
+        "question": "Qual foi a tecnologia usada na armadura do filme Vingadores: Ultimato?",
+        "amount": 20,
+        "answer": "Nanotecnologia",
+        "alternative1": "Tecnologia Quântica",
+        "alternative2": "Microtecnologia",
+        "alternative3": "Manotecnologia"
+    },
+
+    {
+        "heroe": "capitao-america",
+        "idQuestion": 4,
+        "question": "Em qual ano foi inventado o Capitão América?",
+        "amount": 20,
+        "answer": "1940",
+        "alternative1": "1941",
+        "alternative2": "1943",
+        "alternative3": "1945"
     }
 ]
