@@ -83,3 +83,33 @@
     flex-basis: 100%;
     align-items: center;
 }
+
+.certo{
+    flex-basis: 100%;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 15px 0px;
+    border: solid 3px greenyellow;
+    border-radius: 7px;
+}
+
+.certo > p{
+    text-align: center;
+    font-size: 1.5em;
+    color: greenyellow;
+}
+
+.errado{
+    flex-basis: 100%;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 15px 0px;
+    border: solid 3px red;
+    border-radius: 7px;
+}
+
+.errado > p{
+    text-align: center;
+    font-size: 1.5em;
+    color: red;
+}

@@ -81,12 +81,12 @@ export default function Heroe() {
             )}
 
             {activeCorrection === "Certo" ? (
-                <div>
-                    Correto
+                <div className={heroeStyle.certo}>
+                    <p>Correto</p>
                 </div>
             ) : activeCorrection === "Errado" ? (
-                <div>
-                    Errado
+                <div className={heroeStyle.errado}>
+                    <p>Errado</p>
                 </div>
             ) : (
                 <>
