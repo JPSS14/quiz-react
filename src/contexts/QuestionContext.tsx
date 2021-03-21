@@ -52,10 +52,9 @@ export function QuestionsProvider({ children }: QuestionsProviderProps) {
     function start() {
         if (isActive === true) {
             setIsActive(false);
-            setActiveCorrection("Inicial");
         } else {
             setIsActive(true);
-            setActiveCorrection("Inicial");
+            setActiveCorrection("Initial");
         }
     }
 
@@ -118,8 +117,10 @@ export function QuestionsProvider({ children }: QuestionsProviderProps) {
                 levelUp();
             }
             setActiveCorrection("Certo");
+            start();
         }else{
             setActiveCorrection("Errado");
+            start();
         }
 
         setExperience(finalExperience);

@@ -30,8 +30,6 @@ export default function Heroe() {
         corrigir(alternative);
     }
 
-    console.log(isActive);
-
     return (
         <main className={styles.main}>
             <div className={styles.mainTitle}>
@@ -42,7 +40,7 @@ export default function Heroe() {
                 {isActive ? (
                     <div className={heroeStyle.mainQuestion}>
                         <p>{activeQuestion.question}</p>
-                        <p>terte: {alternative}</p>
+                        <p>terte: {alternative} </p>
                         <div>
                             <input type="radio" id="a1" checked={alternative === activeQuestion.alternative1} value={activeQuestion.alternative1} onChange={(e) => { setAlternative(e.target.value) }}></input>
                             <label htmlFor="a1">{activeQuestion.alternative1}</label>
