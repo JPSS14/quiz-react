@@ -17,7 +17,7 @@ interface QuestionsContextData {
     levelUp: () => void;
     activeQuestion: Questions;
     startNewQuestion: (heroe: any) => void;
-    resetQuestion: () => void;
+    resetCorrection: () => void;
     isActive: boolean;
     start: () => void;
     // allQuestions: any;
@@ -100,8 +100,7 @@ export function QuestionsProvider({ children }: QuestionsProviderProps) {
 
     }
 
-    function resetQuestion() {
-        setActiveQuestion(null);
+    function resetCorrection() {
         setActiveCorrection("Inicial");
     }
 
@@ -134,7 +133,7 @@ export function QuestionsProvider({ children }: QuestionsProviderProps) {
                 levelUp,
                 activeQuestion,
                 startNewQuestion,
-                resetQuestion,
+                resetCorrection,
                 isActive,
                 start,
                 // allQuestions,
