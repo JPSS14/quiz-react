@@ -22,7 +22,7 @@ interface QuestionsContextData {
     start: () => void;
     // allQuestions: any;
     corrigir: (alternative: any) => void;
-    next: number;
+    corrigirTreino: (alternative: any) => void;
     // buildAllQuestions: (heroe: any) => void;
     setAlternative: any;
     experienceToNextLevel: number;
@@ -45,7 +45,7 @@ export function QuestionsProvider({ children }: QuestionsProviderProps) {
     const [currentExperience, setExperience] = useState(0);
     const [activeCorrection, setActiveCorrection] = useState("Inicial");
 
-    const experienceToNextLevel = Math.pow((level + 1) * 4,2);
+    const experienceToNextLevel = Math.pow((level + 1) * 4, 2);
 
     // let allQuestion = [];
 
@@ -106,24 +106,35 @@ export function QuestionsProvider({ children }: QuestionsProviderProps) {
 
     function corrigir(alternative) {
         let finalExperience = currentExperience;
-        if(alternative === activeQuestion.answer){
+        if (alternative === activeQuestion.answer) {
             console.log(alternative);
-            const {amount} = activeQuestion;
+            const { amount } = activeQuestion;
 
             finalExperience = currentExperience + amount;
 
-            if(finalExperience >= experienceToNextLevel){
+            if (finalExperience >= experienceToNextLevel) {
                 finalExperience = finalExperience - experienceToNextLevel;
                 levelUp();
             }
             setActiveCorrection("Certo");
             start();
-        }else{
+        } else {
             setActiveCorrection("Errado");
             start();
         }
 
         setExperience(finalExperience);
+    }
+
+    function corrigirTreino(alternative) {
+        if (alternative === activeQuestion.answer) {
+            console.log(alternative);
+            setActiveCorrection("Certo");
+            start();
+        } else {
+            setActiveCorrection("Errado");
+            start();
+        }
     }
 
     return (
@@ -138,7 +149,7 @@ export function QuestionsProvider({ children }: QuestionsProviderProps) {
                 start,
                 // allQuestions,
                 corrigir,
-                next,
+                corrigirTreino,
                 // buildAllQuestions,
                 setAlternative,
                 experienceToNextLevel,

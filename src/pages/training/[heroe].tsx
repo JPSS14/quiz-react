@@ -7,9 +7,11 @@ import { QuestionsContext } from '../../contexts/QuestionContext';
 
 export default function Heroe() {
     const router = useRouter();
-    const { activeQuestion, startNewQuestion, isActive, start, corrigir, activeCorrection } = useContext(QuestionsContext);
+    const { activeQuestion, startNewQuestion, isActive, start, corrigir, corrigirTreino, activeCorrection } = useContext(QuestionsContext);
 
     const [alternative, setAlternative] = useState("");
+
+    console.log(router.query.heroe);
 
     // startNewQuestion(router.query.heroe);
 
@@ -27,7 +29,7 @@ export default function Heroe() {
     }
 
     function correction() {
-        corrigir(alternative);
+        corrigirTreino(alternative);
     }
 
     return (
