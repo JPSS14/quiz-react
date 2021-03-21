@@ -102,6 +102,7 @@ export function QuestionsProvider({ children }: QuestionsProviderProps) {
 
     function resetQuestion() {
         setActiveQuestion(null);
+        setActiveCorrection("Inicial");
     }
 
     function corrigir(alternative) {

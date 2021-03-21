@@ -4,8 +4,9 @@ import {QuestionsContext} from '../contexts/QuestionContext';
 import { useContext } from 'react';
 
 export default function Training() {
-    const {startNewQuestion} = useContext(QuestionsContext);
+    const {resetQuestion} = useContext(QuestionsContext);
 
+    resetQuestion();
     return (
         <main className={styles.main}>
             <div className={styles.mainTitle}>
