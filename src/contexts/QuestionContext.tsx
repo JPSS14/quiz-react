@@ -21,13 +21,14 @@ interface QuestionsContextData {
     isActive: boolean;
     start: () => void;
     // allQuestions: any;
-    corrigir: (alternative: any) => void;
+    corrigir: () => void;
     corrigirTreino: (alternative: any) => void;
     // buildAllQuestions: (heroe: any) => void;
     setAlternative: any;
     experienceToNextLevel: number;
     currentExperience: number;
     activeCorrection: string;
+    muda: (alternative: any) => void;
 }
 
 export const QuestionsContext = createContext({} as QuestionsContextData);
@@ -104,7 +105,7 @@ export function QuestionsProvider({ children }: QuestionsProviderProps) {
         setActiveCorrection("Inicial");
     }
 
-    function corrigir(alternative) {
+    function corrigir() {
         let finalExperience = currentExperience;
         if (alternative === activeQuestion.answer) {
             console.log(alternative);
@@ -137,6 +138,11 @@ export function QuestionsProvider({ children }: QuestionsProviderProps) {
         }
     }
 
+    function muda(alternative){
+        setAlternative(alternative);
+        console.log(alternative);
+    }
+
     return (
         <QuestionsContext.Provider
             value={{
@@ -154,7 +160,8 @@ export function QuestionsProvider({ children }: QuestionsProviderProps) {
                 setAlternative,
                 experienceToNextLevel,
                 currentExperience,
-                activeCorrection
+                activeCorrection,
+                muda
             }}
         >
             {children}
