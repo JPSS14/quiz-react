@@ -1,20 +1,29 @@
-import Link from 'next/link';
+import heroes from '../../heroes.json';
+import { useEffect, useState } from 'react';
 import styles from '../styles/TrainingHeroes.module.css';
-import {QuestionsContext} from '../contexts/QuestionContext';
-import { useContext } from 'react';
-
-export default function Selection({imgSelect, route, heroe}) {
-    const {startNewQuestion} = useContext(QuestionsContext);
+import SelectHeroes from './SelectHeroes';
 
 
-    return(
-    <div className={styles.heroe}>
-        <Link href={`/training/${route}`}>
-            <a>
-                <img src={imgSelect} />
-                <h2>{heroe}</h2>
-            </a>
-        </Link>
-    </div>
+
+export function Selection({pathname}) {
+
+    const [heroeList, setHeroeList] = useState([]);
+
+    useEffect(() => {
+        const loadAll = async () => {
+            let list = heroes;
+            setHeroeList(list);
+        }
+
+        loadAll();
+    }, []);
+
+    return (
+        <section className={styles.mainSection}>
+            {heroeList.map((item, key) => (
+                <SelectHeroes key={key} heroe={item.heroe} imgSelect={item.imgSelect} route={item.route} pathname={pathname}/>
+            ))}
+        </section>
+
     );
 }

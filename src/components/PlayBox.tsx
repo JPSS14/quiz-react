@@ -5,7 +5,7 @@ export function PlayBox() {
     return (
         <div className={styles.playBox}>
             <div className={styles.playBoxContent}>
-                <Link href="/play">
+                <Link href="/play-mode">
                     <a>
                         <img src="captain-america-shield.png" />
                     Jogar

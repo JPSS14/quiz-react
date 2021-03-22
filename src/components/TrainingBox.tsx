@@ -5,7 +5,7 @@ export function TrainingBox() {
     return (
         <div className={styles.trainingBox}>
             <div className={styles.trainingBoxContent}>
-                <Link href="/select">
+                <Link href="/training-mode">
                     <a>
                         <img src="shield.webp" />
                         Treinar
