@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import styles from '../styles/TrainingHeroes.module.css';
-import {QuestionsContext} from '../contexts/QuestionContext';
+import {QuestionsContext} from '../contexts/QuestionsContext';
 import { useContext } from 'react';
 
 export default function Selection({imgSelect, route, heroe, pathname}) {

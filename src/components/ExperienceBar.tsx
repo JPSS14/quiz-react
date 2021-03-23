@@ -1,5 +1,5 @@
 import styles from '../styles/ExperienceBar.module.css';
-import {QuestionsContext} from '../contexts/QuestionContext';
+import {QuestionsContext} from '../contexts/QuestionsContext';
 import { useContext } from 'react';
 
 export function ExperienceBar() {

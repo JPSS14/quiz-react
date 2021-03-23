@@ -1,5 +1,5 @@
 import { useState, useContext, useEffect } from "react";
-import { QuestionsContext } from '../contexts/QuestionContext';
+import { QuestionsContext } from '../contexts/QuestionsContext';
 import heroeStyle from '../styles/Heroe.module.css';
 
 export function Alternative({ alternatives, activeAlternative1, activeAlternative2, activeAlternative3, activeAlternative4}) {

@@ -1,6 +1,6 @@
 import { ExperienceBar } from "../components/ExperienceBar";
 import '../styles/global.css';
-import {QuestionsProvider} from '../contexts/QuestionContext';
+import {QuestionsProvider} from '../contexts/QuestionsContext';
 
 function MyApp({ Component, pageProps }) {
   return (

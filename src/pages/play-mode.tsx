@@ -1,6 +1,6 @@
 import styles from '../styles/main.module.css';
 import { Selection } from '../components/Selection';
-import { QuestionsContext } from '../contexts/QuestionContext';
+import { QuestionsContext } from '../contexts/QuestionsContext';
 import { useContext, useEffect } from 'react';
 
 export default function TplayMode() {
