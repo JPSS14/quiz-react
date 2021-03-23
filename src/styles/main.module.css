@@ -12,7 +12,7 @@
     flex-basis: 100%;
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     box-shadow: rgba(0, 0, 0, 0.18) 0px 4px 4px 0px;
     background: #f1f2f3;
     border-radius: 5px;
@@ -24,11 +24,11 @@
     flex-basis: 100%;
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
+    margin-top: 10px;
     background: #f1f2f3;
     box-shadow: rgba(0, 0, 0, 0.18) 0px 4px 4px 0px;
     border-radius: 5px;
-    padding: 20px 0;
+    padding: 15px 0;
     border: solid 3px #000;
 }
 
@@ -38,4 +38,15 @@
 
 .xp{
     color: greenyellow;
+}
+
+@media (max-width: 740px){
+    /* MAIN */
+}
+
+@media (max-width: 890px){
+    /* MAIN */
+    .main{
+        max-width: 90%;
+    }
 }

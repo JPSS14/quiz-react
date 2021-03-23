@@ -11,7 +11,7 @@
 
 .mainQuestion{
     flex-basis: 45%;
-    margin-left: 10px;
+    margin-left: 5px;
     margin-top: 5px;
 }
 .background{
@@ -30,7 +30,8 @@
 }
 
 .mainQuestion > div{
-    font-size: 1.2em;
+    font-size: 1.1em;
+    margin-bottom: 2px;
 }
 
 .mainQuestion > div > input{
@@ -112,4 +113,17 @@
     text-align: center;
     font-size: 1.5em;
     color: red;
+}
+
+
+@media (max-width: 740px){
+    .mainQuestion{
+        flex-basis: 100%;
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+    .background{
+        flex-basis: 40%;
+        border-radius: 5px;
+    }
 }

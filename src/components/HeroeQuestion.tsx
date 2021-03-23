@@ -3,13 +3,13 @@ import styles from '../styles/main.module.css';
 import heroeStyle from '../styles/Heroe.module.css';
 import { useContext, useEffect } from 'react';
 import { QuestionsContext } from '../contexts/QuestionsContext';
-import {InteractiveButtons} from '../components/InteractiveButtons';
-import {CorrectionStatus} from '../components/CorrectionStatus';
-import {MixerAlternatives} from '../components/MixerAlternatives';
+import { InteractiveButtons } from '../components/InteractiveButtons';
+import { CorrectionStatus } from '../components/CorrectionStatus';
+import { MixerAlternatives } from '../components/MixerAlternatives';
 
 export function HeroeQuestion() {
     const router = useRouter();
-    const { activeQuestion, isActive, start, activeCorrection, option } = useContext(QuestionsContext);
+    const { isActive, start } = useContext(QuestionsContext);
 
     // startNewQuestion(router.query.heroe);
 
@@ -26,16 +26,16 @@ export function HeroeQuestion() {
             </div>
             <div className={heroeStyle.mainContainer}>
 
-                <MixerAlternatives/>
+                <MixerAlternatives />
 
                 <div className={heroeStyle.background}>
                     <img src={`/${router.query.heroe}-back.jpg`} alt={`${router.query.heroe}`} />
                 </div>
-                
+
             </div>
 
-            <InteractiveButtons/>
-            <CorrectionStatus/>
+            <InteractiveButtons />
+            <CorrectionStatus />
 
         </main>
     );

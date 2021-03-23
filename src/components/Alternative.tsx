@@ -16,7 +16,7 @@ export function Alternative({ activeAlternative1, activeAlternative2, activeAlte
     }, [alternative])
 
     return (
-        <div>
+        <div className={heroeStyle.mainQuestion}>
             {isActive ? (
                 <>
                     <div>
