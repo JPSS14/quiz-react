@@ -2,12 +2,12 @@ import { useState, useContext, useEffect } from "react";
 import { QuestionsContext } from '../contexts/QuestionsContext';
 import heroeStyle from '../styles/Heroe.module.css';
 
-export function Alternative({ alternatives, activeAlternative1, activeAlternative2, activeAlternative3, activeAlternative4}) {
+export function Alternative({ activeAlternative1, activeAlternative2, activeAlternative3, activeAlternative4 }) {
     const { isActive, muda } = useContext(QuestionsContext);
 
     const [alternative, setAlternative] = useState("");
 
-    function questao(){
+    function questao() {
         muda(alternative);
     }
 
