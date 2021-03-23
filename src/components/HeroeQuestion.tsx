@@ -6,6 +6,7 @@ import { useContext, useEffect, useState } from 'react';
 import { QuestionsContext } from '../contexts/QuestionsContext';
 import { Alternative } from '../components/Alternative';
 import {InteractiveButtons} from '../components/InteractiveButtons';
+import {CorrectionStatus} from '../components/CorrectionStatus';
 
 export function HeroeQuestion() {
     const router = useRouter();
@@ -62,21 +63,8 @@ export function HeroeQuestion() {
             </div>
 
             <InteractiveButtons/>
-
-            {activeCorrection === "Certo" ? (
-                <div className={heroeStyle.certo}>
-                    <p>Correto</p>
-                </div>
-            ) : activeCorrection === "Errado" ? (
-                <div className={heroeStyle.errado}>
-                    <p>Errado</p>
-                </div>
-            ) : (
-                <>
-                </>
-            )}
-
-
+            <CorrectionStatus/>
+            
         </main>
     );
 }
