@@ -22,13 +22,14 @@ interface QuestionsContextData {
     start: () => void;
     // allQuestions: any;
     corrigir: () => void;
-    corrigirTreino: (alternative: any) => void;
+    corrigirTreino: () => void;
     // buildAllQuestions: (heroe: any) => void;
     setAlternative: any;
     experienceToNextLevel: number;
     currentExperience: number;
     activeCorrection: string;
     muda: (alternative: any) => void;
+    option: number;
 }
 
 export const QuestionsContext = createContext({} as QuestionsContextData);
@@ -41,7 +42,7 @@ export function QuestionsProvider({ children }: QuestionsProviderProps) {
     const [level, setLevel] = useState(1);
     const [activeQuestion, setActiveQuestion] = useState(null);
     const [isActive, setIsActive] = useState(false);
-    const [next, setNext] = useState(0);
+    const [option, setOption] = useState(0);
     const [alternative, setAlternative] = useState("");
     const [currentExperience, setExperience] = useState(0);
     const [activeCorrection, setActiveCorrection] = useState("Inicial");
@@ -98,7 +99,7 @@ export function QuestionsProvider({ children }: QuestionsProviderProps) {
 
     function startNewQuestion(heroe) {
         setActiveQuestion(mixerQuestions(questions.filter(heroes => heroes.heroe === heroe))[0]);
-
+        setOption(Math.floor(Math.random() * (5 - 1) + 1));
     }
 
     function resetCorrection() {
@@ -127,7 +128,7 @@ export function QuestionsProvider({ children }: QuestionsProviderProps) {
         setExperience(finalExperience);
     }
 
-    function corrigirTreino(alternative) {
+    function corrigirTreino() {
         if (alternative === activeQuestion.answer) {
             console.log(alternative);
             setActiveCorrection("Certo");
@@ -161,7 +162,8 @@ export function QuestionsProvider({ children }: QuestionsProviderProps) {
                 experienceToNextLevel,
                 currentExperience,
                 activeCorrection,
-                muda
+                muda,
+                option
             }}
         >
             {children}

@@ -20,20 +20,20 @@ export function Alternative({ alternatives, activeAlternative1, activeAlternativ
             {isActive ? (
                 <>
                     <div>
-                        <input type="radio" id="a1" checked={alternative === activeAlternative1} value={activeAlternative1} onChange={(e) => { setAlternative(e.target.value) }}></input>
-                        <label htmlFor="a1">{activeAlternative1}</label>
+                        <input type="radio" id={activeAlternative1} checked={alternative === activeAlternative1} value={activeAlternative1} onChange={(e) => { setAlternative(e.target.value) }}></input>
+                        <label htmlFor={activeAlternative1}>{activeAlternative1}</label>
                     </div>
                     <div>
-                        <input type="radio" id="a2" checked={alternative === activeAlternative2} value={activeAlternative2} onChange={(e) => { setAlternative(e.target.value) }}></input>
-                        <label htmlFor="a2">{activeAlternative2}</label>
+                        <input type="radio" id={activeAlternative2} checked={alternative === activeAlternative2} value={activeAlternative2} onChange={(e) => { setAlternative(e.target.value) }}></input>
+                        <label htmlFor={activeAlternative2}>{activeAlternative2}</label>
                     </div>
                     <div>
-                        <input type="radio" id="a3" checked={alternative === activeAlternative3} value={activeAlternative3} onChange={(e) => { setAlternative(e.target.value) }}></input>
-                        <label htmlFor="a3">{activeAlternative3}</label>
+                        <input type="radio" id={activeAlternative3} checked={alternative === activeAlternative3} value={activeAlternative3} onChange={(e) => { setAlternative(e.target.value) }}></input>
+                        <label htmlFor={activeAlternative3}>{activeAlternative3}</label>
                     </div>
                     <div>
-                        <input type="radio" id="a4" checked={alternative === activeAlternative4} value={activeAlternative4} onChange={(e) => { setAlternative(e.target.value) }}></input>
-                        <label htmlFor="a4">{activeAlternative4}</label>
+                        <input type="radio" id={activeAlternative4} checked={alternative === activeAlternative4} value={activeAlternative4} onChange={(e) => { setAlternative(e.target.value) }}></input>
+                        <label htmlFor={activeAlternative4}>{activeAlternative4}</label>
                     </div>
                 </>
             ) : (
@@ -41,10 +41,6 @@ export function Alternative({ alternatives, activeAlternative1, activeAlternativ
 
                 </div>
             )}
-            <div>
-                {/* <input type="radio" id="a1" checked={alternative === activeAlternative1} value={activeAlternative1} onChange={(e) => { setAlternative(e.target.value) }}></input>
-                <label htmlFor="a1">{activeAlternative1}</label> */}
-            </div>
         </div>
     );
 }

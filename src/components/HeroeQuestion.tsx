@@ -8,13 +8,13 @@ import { Alternative } from '../components/Alternative';
 
 export function HeroeQuestion() {
     const router = useRouter();
-    const { activeQuestion, startNewQuestion, isActive, start, corrigir, corrigirTreino, activeCorrection } = useContext(QuestionsContext);
+    const { activeQuestion, startNewQuestion, isActive, start, corrigir, corrigirTreino, activeCorrection, option } = useContext(QuestionsContext);
 
     const [alternative, setAlternative] = useState("");
 
-    console.log(router.pathname);
-
     // startNewQuestion(router.query.heroe);
+
+    
 
     useEffect(() => {
         if (isActive === true) {
@@ -22,15 +22,15 @@ export function HeroeQuestion() {
         }
     }, []);
 
-
     function active() {
         start();
         // buildAllQuestions(router.query.heroe);
         startNewQuestion(router.query.heroe);
+        console.log(option);
     }
 
     function correctionTreino() {
-        corrigirTreino(alternative);
+        corrigirTreino();
     }
 
     function correction() {
@@ -44,10 +44,25 @@ export function HeroeQuestion() {
             </div>
             <div className={heroeStyle.mainContainer}>
 
-                {isActive ? (
+                {isActive && option === 1 ? (
                     <div className={heroeStyle.mainQuestion}>
-                        <p>{activeQuestion.question} ok</p>
-                        <Alternative alternatives={alternative} activeAlternative1={activeQuestion.answer} activeAlternative2={activeQuestion.alternative1} activeAlternative3={activeQuestion.alternative2} activeAlternative4={activeQuestion.alternative3}/>                     
+                        <p>{activeQuestion.question}</p>
+                        <Alternative alternatives={alternative} activeAlternative1={activeQuestion.answer} activeAlternative2={activeQuestion.alternative1} activeAlternative3={activeQuestion.alternative2} activeAlternative4={activeQuestion.alternative3} />
+                    </div>
+                ) : isActive && option === 2 ?(
+                    <div className={heroeStyle.mainQuestion}>
+                        <p>{activeQuestion.question}</p>
+                        <Alternative alternatives={alternative} activeAlternative1={activeQuestion.alternative1} activeAlternative2={activeQuestion.answer} activeAlternative3={activeQuestion.alternative2} activeAlternative4={activeQuestion.alternative3} />
+                    </div>
+                ) : isActive && option === 3 ?(
+                    <div className={heroeStyle.mainQuestion}>
+                        <p>{activeQuestion.question}</p>
+                        <Alternative alternatives={alternative} activeAlternative1={activeQuestion.alternative1} activeAlternative2={activeQuestion.alternative2} activeAlternative3={activeQuestion.answer} activeAlternative4={activeQuestion.alternative3} />
+                    </div>
+                ) : isActive && option === 4 ? (
+                    <div className={heroeStyle.mainQuestion}>
+                        <p>{activeQuestion.question}</p>
+                        <Alternative alternatives={alternative} activeAlternative1={activeQuestion.alternative1} activeAlternative2={activeQuestion.alternative2} activeAlternative3={activeQuestion.alternative3} activeAlternative4={activeQuestion.answer} />
                     </div>
                 ) : (
                     <div className={heroeStyle.mainQuestion}>
