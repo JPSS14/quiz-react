@@ -41,5 +41,247 @@
         "alternative1": "1941",
         "alternative2": "1943",
         "alternative3": "1945"
+    },
+
+    {
+        "heroe": "homem-de-ferro",
+        "idQuestion": 5,
+        "question": "Qual é o nome do computador pessoal de Tony Stark?",
+        "amount": 20,
+        "answer": "Jarvis",
+        "alternative1": "Jarbas",
+        "alternative2": "Charlie",
+        "alternative3": "James"
+    },
+
+    {
+        "heroe": "homem-de-ferro",
+        "idQuestion": 6,
+        "question": "Por que Tony Stark fez a armadura em seu cativeiro no Afeganistão?",
+        "amount": 20,
+        "answer": "Para fugir",
+        "alternative1": "Para ajudar a destruir a América",
+        "alternative2": "Para matar o Hulk",
+        "alternative3": "Para dominar o mundo"
+    },
+
+    {
+        "heroe": "homem-de-ferro",
+        "idQuestion": 7,
+        "question": "Qual é o nome do inventor que salvou a vida de Tony Stark no cativeiro?",
+        "amount": 20,
+        "answer": "Dr. Yinsen",
+        "alternative1": "Dr. Green",
+        "alternative2": "Dr. Stone",
+        "alternative3": "Dr. Charlie"
+    },
+
+    {
+        "heroe": "homem-de-ferro",
+        "idQuestion": 8,
+        "question": "Já recuperado, Tony Stark cria uma espécie de luz que é colocada em seu peito. O que seria isso?",
+        "amount": 20,
+        "answer": "Reator Ark",
+        "alternative1": "Reator de poder",
+        "alternative2": "Reator de led",
+        "alternative3": "Eletroímã"
+    },
+
+    {
+        "heroe": "homem-de-ferro",
+        "idQuestion": 9,
+        "question": "Quem criou o monge de ferro?",
+        "amount": 20,
+        "answer": "Obadiah Stone",
+        "alternative1": "Tony Stark",
+        "alternative2": "Pepper Potts",
+        "alternative3": "James Rhodes"
+    },
+
+    {
+        "heroe": "homem-de-ferro",
+        "idQuestion": 10,
+        "question": "Quem é o melhor amigo de Tony Stark no filme Homem de Ferro?",
+        "amount": 20,
+        "answer": "James Rhodes",
+        "alternative1": "Nick Fury",
+        "alternative2": "Obadiah Stone",
+        "alternative3": "Dr. Green"
+    },
+
+    {
+        "heroe": "homem-de-ferro",
+        "idQuestion": 11,
+        "question": "Qual é o nome da cidade onde estava o míssil Jericó que foi roubado de Tony Stark?",
+        "amount": 20,
+        "answer": "Gulmira",
+        "alternative1": "Malibu",
+        "alternative2": "Cabul",
+        "alternative3": "Paghman"
+    },
+
+    {
+        "heroe": "homem-de-ferro",
+        "idQuestion": 12,
+        "question": "De que é feita a armadura 3?",
+        "amount": 20,
+        "answer": "Liga de titânio e ouro",
+        "alternative1": "Aço e ouro",
+        "alternative2": "Liga de titânio e aço",
+        "alternative3": "Liga de ouro e titânio"
+    },
+
+    {
+        "heroe": "homem-de-ferro",
+        "idQuestion": 13,
+        "question": "Que banda de rock canta a musica tema 'Iron man'?",
+        "amount": 20,
+        "answer": "Black Sabbath",
+        "alternative1": "AC/DC",
+        "alternative2": "Iron Maiden",
+        "alternative3": "Guns'n Roses"
+    },
+
+    {
+        "heroe": "homem-de-ferro",
+        "idQuestion": 14,
+        "question": "Quem dirigiu o filme Homem de Ferro?",
+        "amount": 20,
+        "answer": "Jon Favreau",
+        "alternative1": "Steven Spielberg",
+        "alternative2": "James Cameron",
+        "alternative3": "Stan Lee"
+    },
+
+    {
+        "heroe": "capitao-america",
+        "idQuestion": 15,
+        "question": "Complete: Interpretado por Anthony Mackie, ___ também conhecido como 'Falcão', é um dos heróis que aparecem em Capitão America 2.",
+        "amount": 20,
+        "answer": "Samuel Thomas Wilson",
+        "alternative1": "Leonard Thomas Wilson",
+        "alternative2": "Luke Evans Wilson",
+        "alternative3": "Chuck Wilson"
+    },
+
+    {
+        "heroe": "capitao-america",
+        "idQuestion": 16,
+        "question": "No inicio do segundo filme um transporte da S.H.I.E.L.D é sequestrado por terroristas. Qual era esse transporte?",
+        "amount": 20,
+        "answer": "Um Navio",
+        "alternative1": "Um Submarino",
+        "alternative2": "Um Carro",
+        "alternative3": "Um Avião"
+    },
+
+    {
+        "heroe": "capitao-america",
+        "idQuestion": 17,
+        "question": "Logo no inicio do segundo filme após a primeira missão, Steve Rogers fica irritado com Nicky Fury, pois ele:",
+        "amount": 20,
+        "answer": "Não lhe contou que tinha dado uma missão diferente para Natasha Romanoff.",
+        "alternative1": "Tinha matado Inocentes",
+        "alternative2": "Descobre que Fury estava armando planos para matar Tony Stark",
+        "alternative3": "Estava escondendo secretamente o cetro de Loki"
+    },
+
+    {
+        "heroe": "capitao-america",
+        "idQuestion": 18,
+        "question": "Quem era o verdadeiro vilão da história, no segundo filme?",
+        "amount": 20,
+        "answer": "Alexander Pierce",
+        "alternative1": "Soldado Invernal",
+        "alternative2": "Armim Zola",
+        "alternative3": "Nicky Fury"
+    },
+
+    {
+        "heroe": "capitao-america",
+        "idQuestion": 19,
+        "question": "Complete: Após o término da Segunda Guerra Mundial, ___ através da Operação Paperclip, foi recrutado para trabalhar para a S.H.I.E.L.D.",
+        "amount": 20,
+        "answer": "Armim Zola",
+        "alternative1": "Soldado Invernal",
+        "alternative2": "Alexander Pierce",
+        "alternative3": "Nicky Fury"
+    },
+
+    {
+        "heroe": "capitao-america",
+        "idQuestion": 21,
+        "question": "Qual dos personagens abaixo não foi um dos fundadores da S.H.I.E.L.D.?",
+        "amount": 20,
+        "answer": "Steve Rogers",
+        "alternative1": "Peggy Carter",
+        "alternative2": "Howard Stark",
+        "alternative3": "Chester Phillips"
+    },
+
+    {
+        "heroe": "capitao-america",
+        "idQuestion": 22,
+        "question": "Qual agente da S.H.I.E.L.D. não aparece no segundo filme?",
+        "amount": 20,
+        "answer": "Clint Barton",
+        "alternative1": "Natasha Romanoff",
+        "alternative2": "Maria Hill",
+        "alternative3": "Sharon Carter"
+    },
+
+    {
+        "heroe": "capitao-america",
+        "idQuestion": 23,
+        "question": "Quem foi o responsável pela criação do Soldado Invernal?",
+        "amount": 20,
+        "answer": "Armim Zola",
+        "alternative1": "Nicky Fury",
+        "alternative2": "Alexander Pierce",
+        "alternative3": "Johann Schmidt"
+    },
+
+    {
+        "heroe": "capitao-america",
+        "idQuestion": 24,
+        "question": "O que acontece com a S.H.I.E.L.D. ao final do segundo filme?",
+        "amount": 20,
+        "answer": "Encerra suas atividades",
+        "alternative1": "Fica mais poderosa",
+        "alternative2": "Passa a ser comandada por Tony Stark",
+        "alternative3": "É dominada por Ultron"
+    },
+
+    {
+        "heroe": "capitao-america",
+        "idQuestion": 25,
+        "question": "O que era o projeto 'Insight'?",
+        "amount": 20,
+        "answer": "Colocar porta-aviões carregados de armamentos apontados para possíveis alvos, antes que eles apresentem qualquer ameaça",
+        "alternative1": "Colocar bombas em Países considerados perigosos",
+        "alternative2": "Rastrear e eliminar os homens mais inteligentes do mundo",
+        "alternative3": "Visava criar um exército de Soldados Invernais "
+    },
+
+    {
+        "heroe": "capitao-america",
+        "idQuestion": 26,
+        "question": "Apesar de ter sido dado como morto em 1972, Armim Zola continuou vivo, pois:",
+        "amount": 20,
+        "answer": "Transferiu sua consciência para computadores",
+        "alternative1": "Conseguiu criar um soro que prolonga a vida",
+        "alternative2": "Conseguiu viajar no tempo",
+        "alternative3": "Criou um androide idêntico a ele"
+    },
+
+    {
+        "heroe": "capitao-america",
+        "idQuestion": 27,
+        "question": "Logo no inicio do segundo filme, Steve se reencontra com uma antiga paixão. Quem era ela ?",
+        "amount": 20,
+        "answer": "Peggy Carter",
+        "alternative1": "Uma enfermeira",
+        "alternative2": "Natasha Romanoff",
+        "alternative3": "Maria Hill"
     }
 ]
