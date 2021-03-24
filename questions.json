@@ -283,5 +283,335 @@
         "alternative1": "Uma enfermeira",
         "alternative2": "Natasha Romanoff",
         "alternative3": "Maria Hill"
+    },
+
+    {
+        "heroe": "viuva-negra",
+        "idQuestion": 28,
+        "question": "Qual o nome da atriz que interpreta a personagem nos filmes do Universo Marvel",
+        "amount": 20,
+        "answer": "Scarlett Johansson",
+        "alternative1": "Margot Robbie",
+        "alternative2": "Emily Blunt",
+        "alternative3": "Cameron Diaz"
+    },
+
+    {
+        "heroe": "viuva-negra",
+        "idQuestion": 29,
+        "question": "Marque a alternativa em que se encontram os melhores amigos da Natasha nos filmes",
+        "amount": 20,
+        "answer": "Clint Barton e Steve Rogers",
+        "alternative1": "Pepper e Wanda Maximoff",
+        "alternative2": "Tony Stark e Buck Barnes",
+        "alternative3": "Yelena Belova e T'challa"
+    },
+
+    {
+        "heroe": "viuva-negra",
+        "idQuestion": 30,
+        "question": "Em quantos os filmes a personagem apareceu somando até 2019?",
+        "amount": 20,
+        "answer": "7",
+        "alternative1": "6",
+        "alternative2": "8",
+        "alternative3": "5"
+    },
+
+    {
+        "heroe": "viuva-negra",
+        "idQuestion": 31,
+        "question": "Por qual apelido os mais íntimos da Natasha a chamavam nos quadrinhos?",
+        "amount": 20,
+        "answer": "Tasha",
+        "alternative1": "Manoff",
+        "alternative2": "Alianov",
+        "alternative3": "Nats"
+    },
+
+    {
+        "heroe": "viuva-negra",
+        "idQuestion": 31,
+        "question": "Com qual vestimenta Natasha fez sua primeira aparição nos quadrinhos?",
+        "amount": 20,
+        "answer": "Vestido",
+        "alternative1": "Uma blusa amarrada, uma bota e o cabelo solto de prancha",
+        "alternative2": "Jaqueta, com claça jeans e bota de couro",
+        "alternative3": "Macacão"
+    },
+
+    {
+        "heroe": "viuva-negra",
+        "idQuestion": 32,
+        "question": "Qual a cor da roupa que ela usou na primeira aparição dela nos quadrinhos",
+        "amount": 20,
+        "answer": "Roxo",
+        "alternative1": "Preto",
+        "alternative2": "Amarelo",
+        "alternative3": "Vermelho"
+    },
+
+    {
+        "heroe": "viuva-negra",
+        "idQuestion": 33,
+        "question": "Qual o ano de lançamento da primeira aparição da Natasha nos quadrinhos?",
+        "amount": 20,
+        "answer": "1964",
+        "alternative1": "1951",
+        "alternative2": "1958",
+        "alternative3": "1970"
+    },
+
+    {
+        "heroe": "viuva-negra",
+        "idQuestion": 34,
+        "question": "Qual o nome da série de quadrinhos da primeira aparição da Natasha? E quem era o personagem-título da história?",
+        "amount": 20,
+        "answer": "Tales of Suspense - Homem de Ferro",
+        "alternative1": "Tales of Suspense - Capitão América",
+        "alternative2": "Marvel Team Up - Quarteto Fantástico",
+        "alternative3": "Amazing Fantasy - Homem-Aranha"
+    },
+
+    {
+        "heroe": "viuva-negra",
+        "idQuestion": 35,
+        "question": "Quem é o principal rival da Natasha nos quadrinhos?",
+        "amount": 20,
+        "answer": "Yelena Belova",
+        "alternative1": "Dínamo Vermelhho",
+        "alternative2": "Soldado Invernal",
+        "alternative3": "Víbora"
+    },
+
+    {
+        "heroe": "viuva-negra",
+        "idQuestion": 36,
+        "question": "'Nada dura para sempre' é uma frase que a Natasha disse em qual filme?",
+        "amount": 20,
+        "answer": "Vingadores 2: Era de Ultron",
+        "alternative1": "Capitão América 3: Guerra Civil",
+        "alternative2": "Os Vingadores",
+        "alternative3": "Vingadores 4: Ultimato"
+    },
+
+    {
+        "heroe": "viuva-negra",
+        "idQuestion": 37,
+        "question": "Qual o nome da Viuva Negra?",
+        "amount": 20,
+        "answer": "Natasha Romanoff",
+        "alternative1": "Natalia Romanoff",
+        "alternative2": "Natalia Romanove",
+        "alternative3": "Natasha Alianova Romanove"
+    },
+
+    {
+        "heroe": "viuva-negra",
+        "idQuestion": 38,
+        "question": "Qual foi o primeiro filme que ela apareceu?",
+        "amount": 20,
+        "answer": "Homem de ferro 2",
+        "alternative1": "Vingadores",
+        "alternative2": "Vingadores: Era de Ultron",
+        "alternative3": "Capitão América: Soldado Invernal"
+    },
+
+    {
+        "heroe": "viuva-negra",
+        "idQuestion": 39,
+        "question": "Onde ela foi treinada?",
+        "amount": 25,
+        "answer": "KGB",
+        "alternative1": "FBI",
+        "alternative2": "SHIELD",
+        "alternative3": "CIA"
+    },
+
+    {
+        "heroe": "viuva-negra",
+        "idQuestion": 40,
+        "question": "Ela é?",
+        "amount": 20,
+        "answer": "Russa",
+        "alternative1": "Canadense",
+        "alternative2": "Japonesa",
+        "alternative3": "Americana"
+    },
+
+    {
+        "heroe": "viuva-negra",
+        "idQuestion": 41,
+        "question": "Com quem ela teve um romance nos filmes?",
+        "amount": 20,
+        "answer": "Bruce Banner",
+        "alternative1": "Tony Stark",
+        "alternative2": "Steve Rogers",
+        "alternative3": "Clint Barton"
+    },
+
+    {
+        "heroe": "viuva-negra",
+        "idQuestion": 41,
+        "question": "Ela fica loira em qual filme?",
+        "amount": 20,
+        "answer": "Guerra Infinita",
+        "alternative1": "Ultimato",
+        "alternative2": "Era de Ultron",
+        "alternative3": "Homem de ferro 2"
+    },
+
+    {
+        "heroe": "thor",
+        "idQuestion": 42,
+        "question": "Qual o ano que Thor: Ragnarok foi lançado?",
+        "amount": 20,
+        "answer": "2017",
+        "alternative1": "2018",
+        "alternative2": "2019",
+        "alternative3": "2016"
+    },
+
+    {
+        "heroe": "thor",
+        "idQuestion": 43,
+        "question": "O que Surtur queria fazer com Asgard?",
+        "amount": 20,
+        "answer": "Destruir e cumprir a profecia do Ragnarok",
+        "alternative1": "Ser rei de Asgard",
+        "alternative2": "Quimar tudo",
+        "alternative3": "Plantar árvores e fazer o Ragnarok"
+    },
+
+    {
+        "heroe": "thor",
+        "idQuestion": 44,
+        "question": "Quem cortou o cabelo do Thor?",
+        "amount": 20,
+        "answer": "Um velhinho interpretado por Stan Lee",
+        "alternative1": "Bruce Banner",
+        "alternative2": "Loki",
+        "alternative3": "Ele mesmo"
+    },
+
+    {
+        "heroe": "thor",
+        "idQuestion": 45,
+        "question": "Em qual filme o Thor cortou o cabelo?",
+        "amount": 20,
+        "answer": "Thor: Ragnarok",
+        "alternative1": "Vingadores: Ultimato",
+        "alternative2": "Guardiões da Galáxia vol 2",
+        "alternative3": "Vingadores: Guerra Infinita"
+    },
+
+    {
+        "heroe": "thor",
+        "idQuestion": 46,
+        "question": "Em qual filme o Thor cortou o cabelo?",
+        "amount": 20,
+        "answer": "Thor: Ragnarok",
+        "alternative1": "Vingadores: Ultimato",
+        "alternative2": "Guardiões da Galáxia vol 2",
+        "alternative3": "Vingadores: Guerra Infinita"
+    },
+
+    {
+        "heroe": "thor",
+        "idQuestion": 47,
+        "question": "De onde vinha o poder de Hela?",
+        "amount": 20,
+        "answer": "De Asgard",
+        "alternative1": "Da Terra",
+        "alternative2": "De Wakanda",
+        "alternative3": "De Odin"
+    },
+
+    {
+        "heroe": "hulk",
+        "idQuestion": 48,
+        "question": "O que fez o Hulk voltar a ser Bruce Banner no filme Thor: Ragnarok?",
+        "amount": 20,
+        "answer": "Viu uma mensagem da Viuva Negra",
+        "alternative1": "A Viuva Negra acalmou ele",
+        "alternative2": "Thor acalmou ele",
+        "alternative3": "Ele tomou um calmante"
+    },
+
+    {
+        "heroe": "loki",
+        "idQuestion": 49,
+        "question": "O que Loki falou quando chegou em Asgard na luta final de Thor: Ragnarok?",
+        "amount": 30,
+        "answer": "O seu salvador chhegou",
+        "alternative1": "Eu cheguei",
+        "alternative2": "O seu destruidor chegou",
+        "alternative3": "O melhor de todos está aqui"
+    },
+
+    {
+        "heroe": "thor",
+        "idQuestion": 50,
+        "question": "Onde, na Terra, Odin morreu?",
+        "amount": 30,
+        "answer": "Na Noruega",
+        "alternative1": "Nos Estados Unidos",
+        "alternative2": "Na Inglaterra",
+        "alternative3": "Na China"
+    },
+
+    {
+        "heroe": "thor",
+        "idQuestion": 51,
+        "question": "Qual a senha para o Thor acessar o Queen Jet?",
+        "amount": 30,
+        "answer": "Vingador mais forte",
+        "alternative1": "Asgard",
+        "alternative2": "deus do trovão",
+        "alternative3": "Thor, filho de Odin"
+    },
+
+    {
+        "heroe": "thor",
+        "idQuestion": 52,
+        "question": "Qual o nome do martelo que Thor usou em Vingadores: Guerra Infinita?",
+        "amount": 20,
+        "answer": "Rompe Tormentas",
+        "alternative1": "Gelido Lamento",
+        "alternative2": "Grito do Trovão",
+        "alternative3": "Fúria de Asgard"
+    },
+
+    {
+        "heroe": "thor",
+        "idQuestion": 53,
+        "question": "Qual jogo Thor está jogando em Vingadores: Ultimato?",
+        "amount": 30,
+        "answer": "Fortnite",
+        "alternative1": "God of War",
+        "alternative2": "God of War: Ragnarok",
+        "alternative3": "Lego: Vingadores"
+    },
+
+    {
+        "heroe": "thor",
+        "idQuestion": 54,
+        "question": "Quem foi o diretor do filme Thor: Ragnarok?",
+        "amount": 30,
+        "answer": "Taika Waititi",
+        "alternative1": "James Gun",
+        "alternative2": "Zack Snyder",
+        "alternative3": "Anthhony Russo"
+    },
+
+    {
+        "heroe": "thor",
+        "idQuestion": 55,
+        "question": "Qual o nome da irmã de Thor?",
+        "amount": 20,
+        "answer": "Hela",
+        "alternative1": "Ela",
+        "alternative2": "Ella",
+        "alternative3": "Hella"
     }
 ]
