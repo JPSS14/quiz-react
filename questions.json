@@ -613,5 +613,280 @@
         "alternative1": "Ela",
         "alternative2": "Ella",
         "alternative3": "Hella"
+    },
+
+    {
+        "heroe": "hulk",
+        "idQuestion": 56,
+        "question": "Qual é o seu verdadeiro nome?",
+        "amount": 20,
+        "answer": "Bruce Banner",
+        "alternative1": "Tony Stark",
+        "alternative2": "Bruce Wayne",
+        "alternative3": "David Bruce"
+    },
+
+    {
+        "heroe": "hulk",
+        "idQuestion": 56,
+        "question": "Qual é o seu verdadeiro nome?",
+        "amount": 20,
+        "answer": "Bruce Banner",
+        "alternative1": "Tony Stark",
+        "alternative2": "Bruce Wayne",
+        "alternative3": "David Bruce"
+    },
+
+    {
+        "heroe": "hulk",
+        "idQuestion": 57,
+        "question": "Qual radiação causou sua transformação?",
+        "amount": 20,
+        "answer": "Gama",
+        "alternative1": "Beta",
+        "alternative2": "Alfa",
+        "alternative3": "Omega"
+    },
+
+    {
+        "heroe": "hulk",
+        "idQuestion": 58,
+        "question": "Qual o nome do seu pai?",
+        "amount": 30,
+        "answer": "Brian Banner",
+        "alternative1": "Robert Banner",
+        "alternative2": "Robert David Bruce Banner",
+        "alternative3": "Howard Banner"
+    },
+
+    {
+        "heroe": "hulk",
+        "idQuestion": 59,
+        "question": "No filme 'O incrível Hulk', qual é o nickname da pessoa que entra em contato com ele para tentar curar o Hulk?",
+        "amount": 30,
+        "answer": "Sr. Azul",
+        "alternative1": "Sr. Verde",
+        "alternative2": "Sr. Amarelo",
+        "alternative3": "Sr. Vermelho"
+    },
+
+    {
+        "heroe": "hulk",
+        "idQuestion": 60,
+        "question": "No filme 'O incrível Hulk', qual é o nickname que Banner usava na internet?",
+        "amount": 30,
+        "answer": "Sr. Verde",
+        "alternative1": "Sr. Azul",
+        "alternative2": "Sr. Amarelo",
+        "alternative3": "Sr. Vermelho"
+    },
+
+    {
+        "heroe": "hulk",
+        "idQuestion": 61,
+        "question": "No filme 'O incrível Hulk', onde Bruce estava escondido?",
+        "amount": 20,
+        "answer": "Brasil",
+        "alternative1": "Espanha",
+        "alternative2": "Argentina",
+        "alternative3": "Chile"
+    },
+
+    {
+        "heroe": "hulk",
+        "idQuestion": 62,
+        "question": "Bruce virava o monstro quando?",
+        "amount": 20,
+        "answer": "Ficava com raiva",
+        "alternative1": "Ficava triste",
+        "alternative2": "Ficava machucado",
+        "alternative3": "Ficava orgulhoso"
+    },
+
+    {
+        "heroe": "hulk",
+        "idQuestion": 63,
+        "question": "No filme 'O incrível Hulk', quem era o melhor soldado 'segundo o general'?",
+        "amount": 20,
+        "answer": "Blonsky",
+        "alternative1": "Stanley",
+        "alternative2": "Betty",
+        "alternative3": "Buck Barnes"
+    },
+
+    {
+        "heroe": "hulk",
+        "idQuestion": 64,
+        "question": "No filme 'O incrível Hulk', qual o nome da pessoa que acolhe Bruce quando ele esta fugindo do exército?",
+        "amount": 20,
+        "answer": "Stanley",
+        "alternative1": "Betty",
+        "alternative2": "Blonsky",
+        "alternative3": "A mãe de Bruce"
+    },
+
+    {
+        "heroe": "hulk",
+        "idQuestion": 65,
+        "question": "No filme 'O incrível Hulk', o que o general faz com o Blonsky?",
+        "amount": 20,
+        "answer": "Dá um soro",
+        "alternative1": "Treina ele",
+        "alternative2": "Dá uma armadura",
+        "alternative3": "Ensina ele a matar o Hulk"
+    },
+
+    {
+        "heroe": "hulk",
+        "idQuestion": 66,
+        "question": "No filme 'O incrível Hulk', quem é o pai de Betty?",
+        "amount": 20,
+        "answer": "General",
+        "alternative1": "Bruce",
+        "alternative2": "Sr. Verde",
+        "alternative3": "Blonsky"
+    },
+
+    {
+        "heroe": "hulk",
+        "idQuestion": 67,
+        "question": "No filme 'O incrível Hulk', o que aconteceu com Blonsky?",
+        "amount": 20,
+        "answer": "Mandou o Sr. Azul transformar ele em um monstro",
+        "alternative1": "Foi morto por um monstro",
+        "alternative2": "Caiu de um helicóptero e morreu",
+        "alternative3": "Foi morto em um acidente de carro"
+    },
+
+    {
+        "heroe": "hulk",
+        "idQuestion": 67,
+        "question": "No filme 'O incrível Hulk', na luta final o que Bruce fez para se transformar no Hulk?",
+        "amount": 20,
+        "answer": "Pulou de um helicóptero",
+        "alternative1": "Tomou um tiro do general",
+        "alternative2": "Ele mesmo deu um tiro na cabeça",
+        "alternative3": "Foi atropelado por uma moto"
+    },
+
+    {
+        "heroe": "gaviao-arqueiro",
+        "idQuestion": 68,
+        "question": "Qual é o nome verdadeiro do Gavião Arqueiro?",
+        "amount": 20,
+        "answer": "Clint Barton",
+        "alternative1": "Buck Barnes",
+        "alternative2": "Samuel Wilson",
+        "alternative3": "Oliver Clint"
+    },
+
+    {
+        "heroe": "gaviao-arqueiro",
+        "idQuestion": 69,
+        "question": "Qual foi o motivo que levou o Gavião Arqeuiro a se tornar o Ronin?",
+        "amount": 20,
+        "answer": "Perdeu a família",
+        "alternative1": "Perdeu a Wanda",
+        "alternative2": "Perdeu o arco",
+        "alternative3": "Não ter lutado contra o Thanos"
+    },
+
+    {
+        "heroe": "gaviao-arqueiro",
+        "idQuestion": 70,
+        "question": "Qual foi a pessoa que esteve com ele em Budapeste?",
+        "amount": 20,
+        "answer": "Natasha Romanoff",
+        "alternative1": "Wanda Maximoff",
+        "alternative2": "Steve Rogers",
+        "alternative3": "Thanos"
+    },
+
+    {
+        "heroe": "gaviao-arqueiro",
+        "idQuestion": 71,
+        "question": "De qual lado o Gavião Arqueiro ficou no filme Capitão América: Guerra Civil?",
+        "amount": 20,
+        "answer": "Do lado do Capitão América",
+        "alternative1": "Do lado do Homem de Ferro",
+        "alternative2": "Do lado do General Ross",
+        "alternative3": "Do lado do Barão Zemo"
+    },
+
+    {
+        "heroe": "gaviao-arqueiro",
+        "idQuestion": 72,
+        "question": "Quantos filhos o Gavião Arqueiro tem?",
+        "amount": 20,
+        "answer": "3",
+        "alternative1": "1",
+        "alternative2": "2",
+        "alternative3": "4"
+    },
+
+    {
+        "heroe": "gaviao-arqueiro",
+        "idQuestion": 73,
+        "question": "Durante o filme Vingadores: Guerra Infinita, onde estava o Gavião Arqueiro?",
+        "amount": 20,
+        "answer": "Estava com a família",
+        "alternative1": "Estava morto",
+        "alternative2": "Estava preso",
+        "alternative3": "Estava congelado"
+    },
+
+    {
+        "heroe": "gaviao-arqueiro",
+        "idQuestion": 74,
+        "question": "Em Vingadores: Era de Ultron, o Gavião Arqueiro quebra uma plataforma de vidro e derruba o Pietro, o que ele usou para quebrar a plataforma?",
+        "amount": 30,
+        "answer": "Deu um tiro na plataforma",
+        "alternative1": "Deu uma flechada na plataforma",
+        "alternative2": "Deu um chute na plataforma",
+        "alternative3": "Deu uma cabeçada na plataforma"
+    },
+
+    {
+        "heroe": "gaviao-arqueiro",
+        "idQuestion": 75,
+        "question": "Em qual ano o personagem foi criado nos quadrinhos?",
+        "amount": 30,
+        "answer": "1964",
+        "alternative1": "1945",
+        "alternative2": "1966",
+        "alternative3": "1970"
+    },
+
+    {
+        "heroe": "gaviao-arqueiro",
+        "idQuestion": 76,
+        "question": "Em qual quadrinho o Gavião Arqueiro fez sua primeira aparição?",
+        "amount": 30,
+        "answer": "Tales of Suspense",
+        "alternative1": "X-men",
+        "alternative2": "SHIELD",
+        "alternative3": "Vingadores"
+    },
+
+    {
+        "heroe": "gaviao-arqueiro",
+        "idQuestion": 77,
+        "question": "Em qual quadrinho o Gavião Arqueiro fez sua primeira aparição?",
+        "amount": 30,
+        "answer": "Tales of Suspense",
+        "alternative1": "X-men",
+        "alternative2": "SHIELD",
+        "alternative3": "Vingadores"
+    },
+
+    {
+        "heroe": "gaviao-arqueiro",
+        "idQuestion": 78,
+        "question": "Qual personagem foi criado no mesmo ano que o Gavião Arqueiro nos quadrinhos?",
+        "amount": 30,
+        "answer": "Viuva Negra",
+        "alternative1": "Homem de Ferro",
+        "alternative2": "Capitã Marvel",
+        "alternative3": "Capitão América"
     }
 ]
