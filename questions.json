@@ -543,7 +543,7 @@
         "idQuestion": 49,
         "question": "O que Loki falou quando chegou em Asgard na luta final de Thor: Ragnarok?",
         "amount": 30,
-        "answer": "O seu salvador chhegou",
+        "answer": "O seu salvador está aqui",
         "alternative1": "Eu cheguei",
         "alternative2": "O seu destruidor chegou",
         "alternative3": "O melhor de todos está aqui"
@@ -888,5 +888,214 @@
         "alternative1": "Homem de Ferro",
         "alternative2": "Capitã Marvel",
         "alternative3": "Capitão América"
+    },
+
+    {
+        "heroe": "nick-fury",
+        "idQuestion": 79,
+        "question": "Como Nick Fury perdeu o olho?",
+        "amount": 30,
+        "answer": "Um flerken arranhou ele",
+        "alternative1": "Tentou desviar de um tiro e pegou no olho",
+        "alternative2": "Lutando contra o Wolverine",
+        "alternative3": "Um gato arranhou ele"
+    },
+
+    {
+        "heroe": "nick-fury",
+        "idQuestion": 80,
+        "question": "Em qual filme Nick Fury perdeu o olho?",
+        "amount": 20,
+        "answer": "Capitã Marvel",
+        "alternative1": "Vingadores",
+        "alternative2": "Homem de ferro 2",
+        "alternative3": "Capitão América: Soldado Invernal"
+    },
+
+    {
+        "heroe": "nick-fury",
+        "idQuestion": 81,
+        "question": "Qual das frases Nick Fury disse?",
+        "amount": 20,
+        "answer": "Da ultima vez que confiei em alguém perdi um olho",
+        "alternative1": "Não confie no Steve",
+        "alternative2": "Thor é o vingador mais forte",
+        "alternative3": "Esse Hulk não me impressiona"
+    },
+
+    {
+        "heroe": "nick-fury",
+        "idQuestion": 82,
+        "question": "Qual das frases Nick Fury disse?",
+        "amount": 30,
+        "answer": "Torcemos pelo melhor, mas temos que lidar com o que recebemos",
+        "alternative1": "Não confie na Romanoff",
+        "alternative2": "Stark seu pai sempre odiou você",
+        "alternative3": "Vê se morre dessa vez Loki!"
+    },
+
+    {
+        "heroe": "nick-fury",
+        "idQuestion": 83,
+        "question": "Qual das frases Nick Fury disse?",
+        "amount": 30,
+        "answer": "Nós achamos ela, e nem estavamos procurando",
+        "alternative1": "Está claro, que o Banner não sabe o que diz",
+        "alternative2": "Encomenda para Tony Esterco",
+        "alternative3": "Vê se morre dessa vez Thanos!"
+    },
+
+    {
+        "heroe": "nick-fury",
+        "idQuestion": 84,
+        "question": "Qual das frases Nick Fury disse?",
+        "amount": 30,
+        "answer": "Cadê o meu sapato?",
+        "alternative1": "Você não merece isso Thor",
+        "alternative2": "O que eu tenho que fazer para acreditarem em mim?",
+        "alternative3": "Vê se morre dessa vez Ultron!"
+    },
+
+    {
+        "heroe": "nick-fury",
+        "idQuestion": 85,
+        "question": "Quem interpreta Nick Fury?",
+        "amount": 20,
+        "answer": "Samuel L. Jackson",
+        "alternative1": "Chadwick Boseman",
+        "alternative2": "Michael B. Jordan",
+        "alternative3": "Bobby Jenkins"
+    },
+
+    {
+        "heroe": "nick-fury",
+        "idQuestion": 86,
+        "question": "Qual o primeiro alien que Nick Fury encontrou?",
+        "amount": 20,
+        "answer": "Skrull",
+        "alternative1": "Kree",
+        "alternative2": "Flerken",
+        "alternative3": "Titan"
+    },
+
+    {
+        "heroe": "nick-fury",
+        "idQuestion": 87,
+        "question": "Qual o nome completo de Nick Fury?",
+        "amount": 20,
+        "answer": "Nicholas Joseph Fury",
+        "alternative1": "Nicholas Barbano Fury",
+        "alternative2": "Nicholas Thompson Fury",
+        "alternative3": "Nick Thompson Fury"
+    },
+
+    {
+        "heroe": "nick-fury",
+        "idQuestion": 88,
+        "question": "Em qual filme Nick Fury morreu?",
+        "amount": 20,
+        "answer": "Pelo que eu sei nenhum",
+        "alternative1": "Capitão América: Soldado Invernal",
+        "alternative2": "Vingadores: Guerra Infinita",
+        "alternative3": "Vingadores 4: Ultimato"
+    },
+
+    {
+        "heroe": "loki",
+        "idQuestion": 89,
+        "question": "Em qual filme Loki morreu?",
+        "amount": 20,
+        "answer": "Vingadores: Ultimato e Thor 2",
+        "alternative1": "Thor: Ragnarok e Vingadores: Ultimato",
+        "alternative2": "Vingadores: Guerra Infinita e Thor 2",
+        "alternative3": "Em todos os filmes possíveis"
+    },
+
+    {
+        "heroe": "loki",
+        "idQuestion": 90,
+        "question": "Qual é o poder de Loki?",
+        "amount": 20,
+        "answer": "Assumir qualquer forma",
+        "alternative1": "Corronper pessoas",
+        "alternative2": "Controlar pessoas",
+        "alternative3": "Mover objetos"
+    },
+
+    {
+        "heroe": "loki",
+        "idQuestion": 91,
+        "question": "No primeiro filme dos Vingadores, Loki trabalha para quem?",
+        "amount": 20,
+        "answer": "Thanos",
+        "alternative1": "Colecionador",
+        "alternative2": "Dr. Estranho",
+        "alternative3": "Odin"
+    },
+
+    {
+        "heroe": "loki",
+        "idQuestion": 92,
+        "question": "Qual foi o personagem que chamou Loki de deus fraco?",
+        "amount": 20,
+        "answer": "Hulk",
+        "alternative1": "Thanos",
+        "alternative2": "Dr. Estranho",
+        "alternative3": "Thor"
+    },
+
+    {
+        "heroe": "loki",
+        "idQuestion": 93,
+        "question": "Qual foi a frase que Thanos disse depois de matar Loki?",
+        "amount": 20,
+        "answer": "Dessa vez sem ressurreições",
+        "alternative1": "Vê se morre de uma vez Loki!",
+        "alternative2": "Esse já vai tarde",
+        "alternative3": "Um morto não morre duas vezes"
+    },
+
+    {
+        "heroe": "loki",
+        "idQuestion": 94,
+        "question": "Qual o nome do pai de Loki?",
+        "amount": 30,
+        "answer": "Laufey",
+        "alternative1": "Farbauti",
+        "alternative2": "Farbaut",
+        "alternative3": "Odin"
+    },
+
+    {
+        "heroe": "loki",
+        "idQuestion": 95,
+        "question": "Qual foi o ano da primeira aparição de Loki nos quadrinhos?",
+        "amount": 30,
+        "answer": "1949",
+        "alternative1": "1962",
+        "alternative2": "1964",
+        "alternative3": "1945"
+    },
+
+    {
+        "heroe": "loki",
+        "idQuestion": 96,
+        "question": "Na sua primeira aparição nos quadrinhos qual era a cor do cabelo de Loki?",
+        "amount": 30,
+        "answer": "Ruivo",
+        "alternative1": "Preto",
+        "alternative2": "Loiro",
+        "alternative3": "Verde"
+    },
+
+    {
+        "heroe": "loki",
+        "idQuestion": 97,
+        "question": "Loki é interpretado por?",
+        "amount": 30,
+        "answer": "Tom Hiddleston",
+        "alternative1": "Josh Hartnett",
+        "alternative2": "Jim Carrey",
+        "alternative3": "Freddie Highmore"
     }
 ]
