@@ -3,7 +3,7 @@ import { Selection } from '../components/Selection';
 import { QuestionsContext } from '../contexts/QuestionsContext';
 import { useContext, useEffect } from 'react';
 
-export default function TplayMode() {
+export default function playMode() {
     const { resetCorrection } = useContext(QuestionsContext);
     const pathname = "play";
     useEffect(() => {

@@ -13,6 +13,8 @@
     flex-basis: 45%;
     margin-left: 5px;
     margin-top: 5px;
+    justify-content: center;
+    align-items: center;
 }
 .background{
     flex-basis: 45%;
@@ -41,6 +43,23 @@
 .mainQuestion > div > label{
     margin-left: 5px;
 }
+
+.heroeSelected{
+    display: flex;
+    flex-basis: 45%;
+    max-width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroeSelectedImg{
+    flex-basis: 50%;
+}
+
+.heroeSelectedImg img{
+    width: 100%;
+}
+
 
 .option{
     display: flex;

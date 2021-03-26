@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Teste</title>
+        <title>Quiz React</title>
       </Head>
       <main className={styles.main}>
         <div className={styles.mainTitle}>
