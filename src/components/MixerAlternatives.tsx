@@ -6,7 +6,8 @@ import { useRouter } from 'next/router';
 
 export function MixerAlternatives() {
     const router = useRouter();
-    const img = `/c-${router.query.heroe}-dif.png`;
+    const prefix = '/quiz-react';
+    const img = `${prefix}/c-${router.query.heroe}-dif.png`;
     const { isActive, option, activeQuestion } = useContext(QuestionsContext);
     return (
         <>

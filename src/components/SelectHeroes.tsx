@@ -12,7 +12,7 @@ export default function Selection({imgSelect, route, heroe, pathname}) {
         <Link href={`/${pathname}/${route}`}>
             <a>
                 <img src={imgSelect} />
-                <h2>{prefix + heroe}</h2>
+                <h2>{heroe}</h2>
             </a>
         </Link>
     </div>

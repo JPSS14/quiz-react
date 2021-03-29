@@ -10,7 +10,7 @@ import { MixerAlternatives } from '../components/MixerAlternatives';
 export function HeroeQuestion() {
     const router = useRouter();
     const { isActive, start } = useContext(QuestionsContext);
-
+    const prefix = '/quiz-react';
     // startNewQuestion(router.query.heroe);
 
     useEffect(() => {
@@ -29,7 +29,7 @@ export function HeroeQuestion() {
                 <MixerAlternatives />
 
                 <div className={heroeStyle.background}>
-                    <img src={`/${router.query.heroe}-back.jpg`} alt={`${router.query.heroe}`} />
+                    <img src={`${prefix}/${router.query.heroe}-back.jpg`} alt={`${router.query.heroe}`} />
                 </div>
 
             </div>
