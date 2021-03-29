@@ -5,14 +5,14 @@ import { useContext } from 'react';
 
 export default function Selection({imgSelect, route, heroe, pathname}) {
     const {startNewQuestion} = useContext(QuestionsContext);
-
+    const prefix = '/quiz-react';
 
     return(
     <div className={styles.heroe}>
         <Link href={`/${pathname}/${route}`}>
             <a>
                 <img src={imgSelect} />
-                <h2>{heroe}</h2>
+                <h2>{prefix + heroe}</h2>
             </a>
         </Link>
     </div>
