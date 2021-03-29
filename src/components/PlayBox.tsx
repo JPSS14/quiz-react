@@ -8,7 +8,7 @@ export function PlayBox() {
             <div className={styles.playBoxContent}>
                 <Link href="/play-mode">
                     <a>
-                        <img src={`${prefix}captain-america-shield.png`} />
+                        <img src={`${prefix}/captain-america-shield.png`} />
                     Jogar
                 </a>
                 </Link>
